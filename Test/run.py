@@ -33,6 +33,8 @@ if __name__ == "__main__":
     # Wait for the stack to finish launching
     logger.info("Waiting for stack to finish launching...")
     waiter = cfn_client.get_waiter('stack_create_complete')
+    
+    .
 
     waiter.wait(StackName=config.STACK_NAME)
 
